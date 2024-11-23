@@ -1,0 +1,76 @@
+.task-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.task-card {
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    /* Soft gradient background */
+    border: 1px solid #fcb69f;
+    border-radius: 12px;
+    /* More rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    /* Deeper shadow */
+    transition: transform 0.2s, box-shadow 0.2s;
+    /* Add hover effects */
+}
+
+.task-card:hover {
+    transform: scale(1.02);
+    /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.task-card h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #ff5722;
+    /* Vibrant orange */
+}
+
+.task-card p {
+    margin: 5px 0;
+    color: #757575;
+    /* Neutral gray for description */
+    font-size: 15px;
+}
+
+.task-card .status {
+    font-weight: bold;
+    color: #4caf50;
+    /* Green for status */
+}
+
+.task-card button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: opacity 0.3s, transform 0.2s;
+    /* Add smooth transitions */
+}
+
+.task-card button.edit {
+    background: linear-gradient(135deg, #ffc107, #ff9800);
+    /* Yellow to orange gradient */
+    color: white;
+}
+
+.task-card button.delete {
+    background: linear-gradient(135deg, #ff6f61, #e91e63);
+    /* Coral to pink gradient */
+    color: white;
+}
+
+.task-card button:hover {
+    opacity: 0.85;
+    /* Reduce opacity on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge buttons */
+}
